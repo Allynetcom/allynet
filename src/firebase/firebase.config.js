@@ -6,13 +6,13 @@ import { getStorage } from "firebase/storage";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBIJjw3MH_l_5l2PQCpL92fZBnAXR2jEag",
-  authDomain: "allynet-b21ec.firebaseapp.com",
-  projectId: "allynet-b21ec",
-  storageBucket: "allynet-b21ec.firebasestorage.app",
-  messagingSenderId: "372412723624",
-  appId: "1:372412723624:web:547e0c30d003d5ca2a2d9d",
-  measurementId: "G-KKQPJH5Q67"
+  apiKey: "AIzaSyC_ArN5ylqq6KS05udY3WtLWBtE5cujelk",
+  authDomain: "allynet-com.firebaseapp.com",
+  projectId: "allynet-com",
+  storageBucket: "allynet-com.firebasestorage.app",
+  messagingSenderId: "714221037461",
+  appId: "1:714221037461:web:9eb8d91a16800f8a91b89c",
+  measurementId: "G-K6DGWHHR5D"
 };
 
 const app = initializeApp(firebaseConfig);
