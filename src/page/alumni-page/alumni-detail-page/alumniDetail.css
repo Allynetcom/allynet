@@ -1,0 +1,228 @@
+.alumni-detail-container {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  padding: 1rem 2rem;
+}
+
+.alumni-detail-container::-webkit-scrollbar {
+  display: none;
+}
+
+.alumni-header-image .back-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.alumni-header-image .edit-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgb(0, 157, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.alumni-header-image {
+  width: 100%;
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  display: flex;
+  border-radius: 1.6rem;
+}
+
+.alumni-detail-wrapper {
+  width: 45%;
+  margin-top: -70px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+.alumni-detail-wrapper .alumni-profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: red;
+  overflow: hidden;
+}
+
+.alumni-profile img{
+  width: 100%;
+  height: 100%;
+}
+
+.alumni-details {
+  margin-top: .8rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+
+.alumni-details h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.alumni-details h3 {
+  font-size: 16px;
+  font-weight: normal;
+  color: grey;
+}
+
+.alumni-details h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1100FF;
+}
+
+.alumni-details h5 {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: .4rem;
+}
+
+.alumni-details .verified-badge {
+  padding: .4rem 1rem;
+  border: 1px solid #A0A0A0;
+  color: #A0A0A0;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-top: .8rem;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.alumni-detail-wrapper .line {
+  width: 100%;
+  height: 1px;
+  background: #A0A0A060;
+  margin-top: 1rem;
+}
+
+.alumni-about {
+  margin-top: .5rem;
+  width: 100%;
+  height: fit-content;
+  text-align: left;
+}
+
+.alumni-about h2 {
+  font-size: 16px;
+  color: #A0A0A0;
+  font-weight: 600;
+}
+
+.alumni-about p {
+  font-size: 14px;
+  font-size: 500;
+  margin-top: .3rem;
+}
+
+.alumni-experience {
+  margin-top: .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  text-align: left;
+}
+
+.alumni-experience h2 {
+  font-size: 16px;
+  color: #A0A0A0;
+  font-weight: 600;
+}
+
+.alumni-experience .experience-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /* gap: 1rem; */
+  line-height: .9;
+}
+
+.experience-box h1 {
+  width: 60%;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: .4rem;
+}
+
+.experience-box h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: .4rem;
+  color: #A0A0A0;
+  white-space: nowrap;
+}
+
+.alumni-skills {
+  margin-top: .5rem;
+  text-align: left;
+}
+
+.alumni-skills h2 {
+  font-size: 16px;
+  color: #A0A0A0;
+  font-weight: 600;
+}
+
+.alumni-skills .skill-tags {
+  margin-top: .8rem;
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+
+}
+
+.skill-tags .skill-tag {
+  border: 1px solid rgb(208, 208, 208);
+  width: fit-content;
+  padding: .4rem 1rem;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+@media screen and (max-width:765px) {
+  .alumni-detail-container {
+    padding: .4rem .5rem;
+  }
+
+  .alumni-detail-wrapper {
+    width: 96%;
+    margin-top: -50px;
+  }
+
+  .alumni-header-image{
+    border-radius: .8rem;
+  }
+
+  .alumni-detail-wrapper .alumni-profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: red;
+    margin-left: .4rem;
+  }
+}

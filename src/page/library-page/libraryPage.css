@@ -1,0 +1,164 @@
+.lp-library-page {
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+.lp-library-page::-webkit-scrollbar{
+  display: none;
+}
+
+.lp-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.lp-sub-heading {
+  font-size: 16px;
+  color: #7B7B7B;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.lp-search-filter-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.lp-search-container {
+  width: 40%; 
+}
+
+.lp-search-input {
+  width: 100%;
+  height: 45px;
+  padding: .5rem 1.2rem;
+  border-radius: 45px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.lp-filter-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: .5rem 1.5rem;
+  border-radius: 45px;
+  border: none;
+  cursor: pointer;
+  background-color: #e7e7e7;
+}
+
+.lp-filter-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.lp-notes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.lp-note-card {
+  border: 1px solid #A7A7A7;
+  border-radius: 16px;
+  background: transparent;
+}
+
+.lp-libimg {
+  width: 100%;
+  height: 80px;
+}
+
+.lp-note-title {
+  padding: 10px 10px 1px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.lp-note-description {
+  padding: 10px;
+  font-size: 14px;
+  color: #7B7B7B;
+  text-align: left;
+}
+
+.lp-note-meta {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 12px;
+  color: black;
+  margin-bottom: 12px;
+}
+
+.lp-clock {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.lp-download-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #7B7B7B;
+  padding: 8px 10px;
+  margin-top: auto;
+}
+
+.lp-download-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  background: #1100ff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.lp-download-btn:hover {
+  background: #0056b3;
+}
+
+.lp-download-icon {
+  width: 17px;
+  height: 17px;
+}
+
+.lp-file-size {
+  font-size: 12px;
+  color: #7B7B7B;
+}
+
+@media screen and (max-width:765px) {
+  .lp-library-page{
+    padding: 1rem .8rem;
+    margin-bottom: 5rem;
+  }
+  .lp-heading{
+    font-size: 5vw;
+    font-weight: 700;
+  }
+  .lp-search-container{
+    border: none;
+    width: 100%;
+  }
+  .lp-search-input{
+    width: 100%;
+  }
+  .lp-notes-grid{
+    grid-template-columns: repeat(1,1fr);
+  }
+}

@@ -1,0 +1,240 @@
+.allynet-student-signup-wrapper {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.allynet-student-left {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 50%;
+}
+
+.allynet-student-right {
+  width: 50%;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.allynet-student-right img {
+  width: 100%;
+  height: 100%;
+}
+
+.allynet-student-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.allynet-student-progress {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* common progress styles remain */
+.progress-bar {
+  height: 4px;
+  background-color: #333333;
+  border-radius: 2px;
+}
+
+.progress-fill-complete {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+.allynet-student-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.allynet-student-title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.allynet-student-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* common input styles remain */
+.form-input {
+  width: 100%;
+  height: 55px;
+  background-color: transparent;
+  border: 2px solid #333333;
+  border-radius: 24px;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 0 25px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-input::placeholder {
+  color: #666666;
+}
+
+.form-input:focus {
+  border-color: #ffffff;
+}
+
+.allynet-student-form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-input-half {
+  flex: 1;
+}
+
+.allynet-student-form-select {
+  flex: 1;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid #333333;
+  border-radius: 24px;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  padding-right: 50px;
+}
+
+.allynet-student-form-select option {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.allynet-student-form-select:focus {
+  border-color: #ffffff;
+}
+
+.allynet-student-create-account {
+  width: 100%;
+  height: 48px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 24px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.allynet-student-create-account:hover {
+  background-color: #f0f0f0;
+}
+
+.allynet-student-create-account:active {
+  transform: scale(0.98);
+}
+
+.allynet-student-bottom-buttons {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.allynet-student-back-button,
+.allynet-student-login-button {
+  flex: 1;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 24px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.allynet-student-back-button:hover,
+.allynet-student-login-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.allynet-student-back-button:active,
+.allynet-student-login-button:active {
+  transform: scale(0.98);
+}
+@media (max-width: 768px) {
+  .allynet-student-signup-wrapper {
+    flex-direction: column;   
+  }
+
+  .allynet-student-left {
+    width: 100%;
+  }
+
+  .allynet-student-container {
+    height: auto; /* let content decide height */
+  }
+
+  .allynet-student-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .allynet-student-form {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .form-input,
+  .allynet-student-form-select,
+  .allynet-student-create-account,
+  .allynet-student-back-button,
+  .allynet-student-login-button {
+    height: 44px;
+    font-size: 14px;
+    border-radius: 20px;
+  }
+
+  .allynet-student-form-row {
+    flex-direction: column; /* branch/year one below other */
+    gap: 10px;
+  }
+
+  .form-input-half {
+    flex: unset;
+    width: 100%;
+  }
+
+  /* hide right section completely on mobile */
+  .allynet-student-right {
+    display: none !important;
+  }
+}
